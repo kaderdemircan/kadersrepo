@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  web:
+    image: nginx:alpine
+    restart: always
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
